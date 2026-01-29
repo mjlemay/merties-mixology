@@ -1,0 +1,18 @@
+{
+  "Group": "com.mertie",
+  "Name": "MertiesMixology",
+  "Version": "1.0.0",
+  "Description": "Adds mixology workbenches and cocktail crafting to Hytale",
+  "Authors": [
+    {
+      "Name": "Mertie"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "com.mertie.mixology.MixologyPlugin",
+  "IncludesAssetPack": false
+}
