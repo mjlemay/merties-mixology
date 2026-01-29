@@ -14,5 +14,5 @@
   "OptionalDependencies": {},
   "DisabledByDefault": false,
   "Main": "com.mertie.mixology.MixologyPlugin",
-  "IncludesAssetPack": false
+  "IncludesAssetPack": true
 }

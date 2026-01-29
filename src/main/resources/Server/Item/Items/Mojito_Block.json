@@ -1,0 +1,35 @@
+{
+  "TranslationProperties": {
+    "Name": "items.mojito_block.name",
+    "Description": "items.mojito_block.description"
+  },
+  "Id": "Mojito_Block",
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/mojito_block.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Decorative",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Wood",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Wood",
+        "ItemId": "Mojito_Block"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "Textures": [
+      {
+        "All": "BlockTextures/mojito_block.png"
+      }
+    ],
+    "ParticleColor": "#98fb98",
+    "BlockSoundSetId": "Wood",
+    "BlockBreakingDecalId": "Breaking_Decals_Wood"
+  }
+}
