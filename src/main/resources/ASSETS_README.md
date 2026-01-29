@@ -81,11 +81,30 @@ MertiesMixologyPlugin-1.0.0.jar
 In `Mojito_Block.json`, assets are referenced with full paths including extensions:
 ```json
 "Icon": "Icons/ItemsGenerated/mojito_block.png"
-"Textures": [{ "All": "BlockTextures/mojito_block.png" }]
+"Textures": [
+  {
+    "Up": "BlockTextures/mojito_block_top.png",
+    "Down": "BlockTextures/mojito_block_bottom.png",
+    "North": "BlockTextures/mojito_block_side.png",
+    "South": "BlockTextures/mojito_block_side.png",
+    "East": "BlockTextures/mojito_block_side.png",
+    "West": "BlockTextures/mojito_block_side.png"
+  }
+]
 ```
+
+**Texture Options**:
+- `"All": "path.png"` - Same texture on all 6 faces
+- **3-way (shown above)**: Use `Up`/`Down` + all 4 cardinal directions with same texture for sides
+- **6-way**: `"North"/"South"/"East"/"West"/"Up"/"Down"` - Individual texture for each face
+
+**Property Names**:
+- Use `Up` and `Down` (NOT "Top" and "Bottom")
+- Use `North`, `South`, `East`, `West` for sides
+- Use `All` for uniform textures
 
 **Important**:
 - Icon paths DO include `.png` extension
 - Texture paths (BlockTextures) DO include `.png` extension
 - Texture paths do NOT include `Common/` prefix
-- Icon paths do NOT include `Common/` prefix (Icons/ is at root)
+- Icon paths do NOT include `Common/` prefix (Icons/ is in Common/)
