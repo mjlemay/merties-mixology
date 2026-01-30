@@ -1,0 +1,44 @@
+{
+  "TranslationProperties": {
+    "Name": "items.mixology_bar.name",
+    "Description": "items.mixology_bar.description"
+  },
+  "Icon": "Icons/ItemsGenerated/booze_crate.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "MaxStack": 1,
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/mixology_bar.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/booze_crate_bottom.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "Mixology_Drinks",
+          "Icon": "Icons/CraftingCategories/mixology_drinks.png",
+          "Name": "items.mixology_bar.category.drinks"
+        }
+      ],
+      "Id": "Mixology_Bar"
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Wood"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#8B4513",
+    "BlockSoundSetId": "Wood"
+  }
+}

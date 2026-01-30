@@ -1,11 +1,11 @@
 {
   "TranslationProperties": {
-    "Name": "items.mojito_block.name",
-    "Description": "items.mojito_block.description"
+    "Name": "items.booze_crate.name",
+    "Description": "items.booze_crate.description"
   },
-  "Id": "Mojito_Block",
+  "Id": "Booze_Crate",
   "MaxStack": 100,
-  "Icon": "Icons/ItemsGenerated/mojito_block.png",
+  "Icon": "Icons/ItemsGenerated/booze_crate.png",
   "Categories": [
     "Blocks.Deco"
   ],
@@ -19,18 +19,18 @@
     "Gathering": {
       "Breaking": {
         "GatherType": "Wood",
-        "ItemId": "Mojito_Block"
+        "ItemId": "Booze_Crate"
       }
     },
     "BlockParticleSetId": "Wood",
     "Textures": [
       {
-        "Up": "BlockTextures/mojito_block_top.png",
-        "Down": "BlockTextures/mojito_block_bottom.png",
-        "North": "BlockTextures/mojito_block_side.png",
-        "South": "BlockTextures/mojito_block_side.png",
-        "East": "BlockTextures/mojito_block_side.png",
-        "West": "BlockTextures/mojito_block_side.png"
+        "Up": "BlockTextures/booze_crate_top.png",
+        "Down": "BlockTextures/booze_crate_bottom.png",
+        "North": "BlockTextures/booze_crate_side.png",
+        "South": "BlockTextures/booze_crate_side.png",
+        "East": "BlockTextures/booze_crate_side.png",
+        "West": "BlockTextures/booze_crate_side.png"
       }
     ],
     "ParticleColor": "#572c15",

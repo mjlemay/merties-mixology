@@ -1,2 +1,6 @@
-items.mojito_block.name = Mojito Block
-items.mojito_block.description = A decorative block with refreshing mint vibes. Perfect for bar decorations!
+items.booze_crate.name = Booze Crate
+items.booze_crate.description = A decorative block with refreshing mint vibes. Perfect for bar decorations!
+
+items.mixology_bar.name = Mixology Bar
+items.mixology_bar.description = A crafting station for creating cocktails and mixology items. Shake things up!
+items.mixology_bar.category.drinks = Drinks
