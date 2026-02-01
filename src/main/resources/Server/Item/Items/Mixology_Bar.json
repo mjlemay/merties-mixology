@@ -11,12 +11,13 @@
   "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
+    "Size": {"x": 2, "y": 1, "z": 1},
     "DrawType": "Model",
     "Opacity": "Transparent",
     "CustomModel": "Items/mixology_bar.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/booze_crate_bottom.png",
+        "Texture": "BlockTextures/mixology_bar.png",
         "Weight": 1
       }
     ],
