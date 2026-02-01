@@ -14,7 +14,7 @@ src/main/resources/
 │   ├── Models/
 │   │   └── Items/               # .blockymodel files for items
 │   ├── Blocks/
-│   │   └── booze_crate/        # Block models (optional)
+│   │   └── mixology_crate/        # Block models (optional)
 │   ├── Textures/
 │   │   └── Items/               # .png texture files for items
 │   ├── BlockTextures/           # .png texture files for blocks
@@ -99,25 +99,25 @@ Add a `Recipe` object to items that should be craftable:
 - Uses placeholder Crafting Table model and icon
 - Crafting station ID: `"Mixology_Bar"`
 
-### Booze Crate (Decorative Block)
-- Definition: `Server/Item/Items/Booze_Crate.json`
+### Mixology Crate (Decorative Block)
+- Definition: `Server/Item/Items/Mixology_Crate.json`
 - Translation: `Server/Languages/en-US/items.lang`
-- Texture: `Common/BlockTextures/booze_crate_*.png` (multiple sides)
-- Icon: `Icons/ItemsGenerated/booze_crate.png` (copied from texture)
+- Texture: `Common/BlockTextures/mixology_crate_*.png` (multiple sides)
+- Icon: `Icons/ItemsGenerated/mixology_crate.png` (copied from texture)
 - Available in creative mode (Blocks > Deco)
 
 ### Asset References in JSON
-In `Booze_Crate.json`, assets are referenced with full paths including extensions:
+In `Mixology_Crate.json`, assets are referenced with full paths including extensions:
 ```json
-"Icon": "Icons/ItemsGenerated/booze_crate.png"
+"Icon": "Icons/ItemsGenerated/mixology_crate.png"
 "Textures": [
   {
-    "Up": "BlockTextures/booze_crate_top.png",
-    "Down": "BlockTextures/booze_crate_bottom.png",
-    "North": "BlockTextures/booze_crate_side.png",
-    "South": "BlockTextures/booze_crate_side.png",
-    "East": "BlockTextures/booze_crate_side.png",
-    "West": "BlockTextures/booze_crate_side.png"
+    "Up": "BlockTextures/mixology_crate_top.png",
+    "Down": "BlockTextures/mixology_crate_bottom.png",
+    "North": "BlockTextures/mixology_crate_side.png",
+    "South": "BlockTextures/mixology_crate_side.png",
+    "East": "BlockTextures/mixology_crate_side.png",
+    "West": "BlockTextures/mixology_crate_side.png"
   }
 ]
 ```

@@ -1,9 +1,9 @@
 {
   "TranslationProperties": {
     "Name": "Mixology Bar",
-    "Description": "items.mixology_bar.description"
+    "Description": "A stylish bar for crafting and serving exquisite drinks."
   },
-  "Icon": "Icons/ItemsGenerated/booze_crate.png",
+  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
   "Categories": [
     "Furniture.Benches"
   ],

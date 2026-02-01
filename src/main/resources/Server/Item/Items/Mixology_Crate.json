@@ -1,11 +1,10 @@
 {
   "TranslationProperties": {
     "Name": "Mixology Crate",
-    "Description": "items.booze_crate.description"
+    "Description": "The perfect crate to store your finest beverages in."
   },
-  "Id": "Booze_Crate",
   "MaxStack": 100,
-  "Icon": "Icons/ItemsGenerated/booze_crate.png",
+  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
   "Categories": [
     "Blocks.Deco"
   ],
@@ -19,18 +18,18 @@
     "Gathering": {
       "Breaking": {
         "GatherType": "Wood",
-        "ItemId": "Booze_Crate"
+        "ItemId": "Mixology_Crate"
       }
     },
     "BlockParticleSetId": "Wood",
     "Textures": [
       {
-        "Up": "BlockTextures/booze_crate_top.png",
-        "Down": "BlockTextures/booze_crate_bottom.png",
-        "North": "BlockTextures/booze_crate_side.png",
-        "South": "BlockTextures/booze_crate_side.png",
-        "East": "BlockTextures/booze_crate_side.png",
-        "West": "BlockTextures/booze_crate_side.png"
+        "Up": "BlockTextures/mixology_crate_top.png",
+        "Down": "BlockTextures/mixology_crate_bottom.png",
+        "North": "BlockTextures/mixology_crate_side.png",
+        "South": "BlockTextures/mixology_crate_side.png",
+        "East": "BlockTextures/mixology_crate_side.png",
+        "West": "BlockTextures/mixology_crate_side.png"
       }
     ],
     "ParticleColor": "#572c15",
