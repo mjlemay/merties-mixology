@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "items.mixology_bar.name",
+    "Name": "Mixology Bar",
     "Description": "items.mixology_bar.description"
   },
   "Icon": "Icons/ItemsGenerated/booze_crate.png",
