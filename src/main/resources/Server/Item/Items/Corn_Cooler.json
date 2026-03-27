@@ -1,0 +1,52 @@
+{
+  "TranslationProperties": {
+    "Name": "Corn Cooler",
+    "Description": "A smooth and sweet corn beverage in an elegant coupe glass. Perfect for warm afternoons."
+  },
+  "Parent": "Template_Food",
+  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Uncommon",
+  "MaxStack": 16,
+  "Consumable": true,
+  "PlayerAnimationsId": "Item",
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "ItemAnimationId": "Consume"
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Health_Regen_Small"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Plant_Crop_Corn",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Mixology_Bar",
+        "Categories": [
+          "Mixology_Drinks"
+        ]
+      }
+    ]
+  }
+}

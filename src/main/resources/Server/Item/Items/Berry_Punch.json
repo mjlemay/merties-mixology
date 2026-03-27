@@ -1,0 +1,52 @@
+{
+  "TranslationProperties": {
+    "Name": "Berry Punch",
+    "Description": "A vibrant and fruity punch served in a fun tiki mug. Bursting with berry flavor and tropical vibes."
+  },
+  "Parent": "Template_Food",
+  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Uncommon",
+  "MaxStack": 16,
+  "Consumable": true,
+  "PlayerAnimationsId": "Item",
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "ItemAnimationId": "Consume"
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Health_Regen_Small"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Plant_Crop_Berry_Blue",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Mixology_Bar",
+        "Categories": [
+          "Mixology_Drinks"
+        ]
+      }
+    ]
+  }
+}

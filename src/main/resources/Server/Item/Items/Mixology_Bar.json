@@ -3,17 +3,15 @@
     "Name": "Mixology Bar",
     "Description": "A stylish bar for crafting and serving exquisite drinks."
   },
-  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Icon": "Icons/ItemsGenerated/mixology_bar.png",
   "Categories": [
     "Furniture.Benches"
   ],
-  "MaxStack": 1,
-  "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
-    "Size": {"x": 2, "y": 1, "z": 1},
     "DrawType": "Model",
     "Opacity": "Transparent",
+    "HitboxType": "Bench_Mixology_Bar",
     "CustomModel": "Items/mixology_bar.blockymodel",
     "CustomModelTexture": [
       {
@@ -41,5 +39,7 @@
     "BlockParticleSetId": "Wood",
     "ParticleColor": "#8B4513",
     "BlockSoundSetId": "Wood"
-  }
+  },
+  "PlayerAnimationsId": "Block",
+  "MaxStack": 1
 }
