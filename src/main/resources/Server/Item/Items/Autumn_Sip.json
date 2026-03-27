@@ -4,7 +4,7 @@
     "Description": "A warm and cozy pumpkin beverage served in a rustic pint glass. Tastes like fall in a drink."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Icon": "Icons/ItemsGenerated/cocktail_autumn_sip.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -32,10 +32,21 @@
       ]
     }
   },
+  "BlockType": {
+    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/cocktail_autmn_sip.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassSmall",
+    "ParticleColor": "#e87f3a"
+  },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Pumpkin",
+        "ItemId": "Plant_Crop_Pumpkin_Item",
         "Quantity": 1
       }
     ],

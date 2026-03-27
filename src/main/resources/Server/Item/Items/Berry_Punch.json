@@ -4,7 +4,7 @@
     "Description": "A vibrant and fruity punch served in a fun tiki mug. Bursting with berry flavor and tropical vibes."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Icon": "Icons/ItemsGenerated/cocktail_berry_punch.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -32,10 +32,21 @@
       ]
     }
   },
+  "BlockType": {
+    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/cocktail_berry_punch.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassSmall",
+    "ParticleColor": "#8b45a6"
+  },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Berry_Blue",
+        "ItemId": "Plant_Fruit_Berries_Red",
         "Quantity": 1
       }
     ],

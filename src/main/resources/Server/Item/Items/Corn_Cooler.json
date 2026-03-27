@@ -4,7 +4,7 @@
     "Description": "A smooth and sweet corn beverage in an elegant coupe glass. Perfect for warm afternoons."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Icon": "Icons/ItemsGenerated/cocktail_corn_cooler.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -32,10 +32,21 @@
       ]
     }
   },
+  "BlockType": {
+    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/cocktail_corn_cooler.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassSmall",
+    "ParticleColor": "#f5d063"
+  },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Corn",
+        "ItemId": "Plant_Crop_Corn_Item",
         "Quantity": 1
       }
     ],

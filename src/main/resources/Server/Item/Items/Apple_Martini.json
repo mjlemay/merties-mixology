@@ -4,7 +4,7 @@
     "Description": "A crisp and refreshing apple cocktail served in an elegant martini glass. Restores health with a subtle fizz."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/mixology_crate.png",
+  "Icon": "Icons/ItemsGenerated/cocktail_apple_martini.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -32,10 +32,21 @@
       ]
     }
   },
+  "BlockType": {
+    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/cocktail_martini.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassSmall",
+    "ParticleColor": "#7ec850"
+  },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Apple",
+        "ItemId": "Plant_Fruit_Apple",
         "Quantity": 1
       }
     ],
