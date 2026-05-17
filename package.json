@@ -1,6 +1,6 @@
 {
   "name": "merties-mixology",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Craft artisanal fruit cocktails at your Mixology Bar—four signature drinks in unique glassware with health restoration.",
   "scripts": {
     "deploy": "./deploy.sh",

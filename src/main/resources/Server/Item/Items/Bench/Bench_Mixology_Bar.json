@@ -7,6 +7,28 @@
   "Categories": [
     "Furniture.Benches"
   ],
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 6
+      },
+      {
+        "ResourceTypeId": "Rock",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
@@ -29,9 +51,10 @@
           "Name": "items.mixology_bar.category.drinks"
         }
       ],
-      "LocalOpenSoundEventId": "SFX_Bench_Placeholder",
-      "LocalCloseSoundEventId": "SFX_Bench_Placeholder",
-      "CompletedSoundEventId": "SFX_Bench_Placeholder",
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
       "Id": "Mixology_Bar"
     },
     "BlockEntity": {
@@ -56,7 +79,7 @@
     },
     "Gathering": {
       "Breaking": {
-        "GatherType": "Wood"
+        "GatherType": "Benches"
       }
     },
     "BlockParticleSetId": "Wood",
@@ -64,10 +87,24 @@
     "BlockSoundSetId": "Wood"
   },
   "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.42,
+    "Rotation": [
+      22.5,
+      45.0,
+      22.5
+    ],
+    "Translation": [
+      12.9,
+      -11.7
+    ]
+  },
   "Tags": {
     "Type": [
       "Bench"
     ]
   },
-  "MaxStack": 1
+  "MaxStack": 1,
+  "ItemLevel": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
 }

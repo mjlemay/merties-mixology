@@ -33,10 +33,10 @@
     }
   },
   "BlockType": {
-    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModel": "Items/cocktail_pumpkin_sip.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/cocktail_autmn_sip.png",
+        "Texture": "BlockTextures/cocktail_pumpkin_sip.png",
         "Weight": 1
       }
     ],
