@@ -33,15 +33,15 @@
     }
   },
   "BlockType": {
-    "CustomModel": "Items/cocktail_martini.blockymodel",
+    "CustomModel": "Items/cocktail_corn_jar.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/cocktail_corn_cooler.png",
+        "Texture": "BlockTextures/cocktail_corn_jar.png",
         "Weight": 1
       }
     ],
     "BlockParticleSetId": "GlassSmall",
-    "ParticleColor": "#f5d063"
+    "ParticleColor": "#ffa117"
   },
   "Recipe": {
     "Input": [
