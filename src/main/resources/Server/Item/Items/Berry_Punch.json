@@ -40,7 +40,7 @@
         "Weight": 1
       }
     ],
-    "BlockParticleSetId": "woodSmall",
+    "BlockParticleSetId": "Snow",
     "ParticleColor": "#9265af"
   },
   "Recipe": {
