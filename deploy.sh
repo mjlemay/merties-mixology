@@ -10,8 +10,9 @@ if [ $? -eq 0 ]; then
 
     # Copy to Hytale mods folder (remove old versions first)
     echo "Copying to Hytale mods folder..."
+    VERSION=$(grep '^version' build.gradle.kts | head -1 | sed 's/.*"\(.*\)".*/\1/')
     rm -f ~/Library/Application\ Support/Hytale/UserData/mods/MertiesMixologyPlugin-*.jar
-    cp build/libs/MertiesMixologyPlugin-*.jar ~/Library/Application\ Support/Hytale/UserData/mods/
+    cp "build/libs/MertiesMixologyPlugin-${VERSION}.jar" ~/Library/Application\ Support/Hytale/UserData/mods/
 
     if [ $? -eq 0 ]; then
         echo "✓ Plugin deployed successfully to ~/Library/Application Support/Hytale/UserData/mods/"
