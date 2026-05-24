@@ -8,9 +8,10 @@ echo "Building Mixology Plugin..."
 if [ $? -eq 0 ]; then
     echo "Build successful!"
 
-    # Copy to Hytale mods folder
+    # Copy to Hytale mods folder (remove old versions first)
     echo "Copying to Hytale mods folder..."
-    cp build/libs/MertiesMixologyPlugin-1.0.0.jar ~/Library/Application\ Support/Hytale/UserData/mods/
+    rm -f ~/Library/Application\ Support/Hytale/UserData/mods/MertiesMixologyPlugin-*.jar
+    cp build/libs/MertiesMixologyPlugin-*.jar ~/Library/Application\ Support/Hytale/UserData/mods/
 
     if [ $? -eq 0 ]; then
         echo "✓ Plugin deployed successfully to ~/Library/Application Support/Hytale/UserData/mods/"
