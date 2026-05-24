@@ -40,13 +40,17 @@
         "Weight": 1
       }
     ],
-    "BlockParticleSetId": "GlassSmall",
-    "ParticleColor": "#e87f3a"
+    "BlockParticleSetId": "vegetableSmall",
+    "ParticleColor": "#402004"
   },
   "Recipe": {
     "Input": [
       {
         "ItemId": "Plant_Crop_Pumpkin_Item",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
         "Quantity": 1
       }
     ],

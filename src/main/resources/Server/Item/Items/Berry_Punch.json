@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
     "Name": "Berry Punch",
-    "Description": "A vibrant and fruity punch served in a fun tiki mug. Bursting with berry flavor and tropical vibes."
+    "Description": "A vibrant and fruity punch served in a solo cup. Bursting with berry flavor and tropical vibes."
   },
   "Parent": "Template_Food",
   "Icon": "Icons/ItemsGenerated/cocktail_berry_punch.png",
@@ -36,17 +36,21 @@
     "CustomModel": "Items/cocktail_berry_solo_cup.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/cocktail_berry_solo_cup.png",
+        "Texture": "BlockTextures/cocktail_solo_cup.png",
         "Weight": 1
       }
     ],
-    "BlockParticleSetId": "GlassSmall",
-    "ParticleColor": "#8b45a6"
+    "BlockParticleSetId": "woodSmall",
+    "ParticleColor": "#9265af"
   },
   "Recipe": {
     "Input": [
       {
         "ItemId": "Plant_Fruit_Berries_Red",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
         "Quantity": 1
       }
     ],

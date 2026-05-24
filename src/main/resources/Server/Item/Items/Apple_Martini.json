@@ -48,6 +48,10 @@
       {
         "ItemId": "Plant_Fruit_Apple",
         "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
