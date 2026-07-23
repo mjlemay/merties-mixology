@@ -23,11 +23,38 @@
         }
       ]
     },
+    "RemoveEffect": {
+      "Interactions": [{ "Type": "Simple" }]
+    },
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "Food_Health_Regen_Small"
+          "EffectId": {
+            "StatModifiers": { "Health": 25 },
+            "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": { "Health": -1 },
+            "Duration": 30,
+            "DamageCalculatorCooldown": 2,
+            "Debuff": true,
+            "StatusEffectIcon": "UI/StatusEffects/Poison.png",
+            "OverlapBehavior": "Extend"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": { "Stamina": 5 },
+            "Duration": 30,
+            "DamageCalculatorCooldown": 2,
+            "StatusEffectIcon": "UI/StatusEffects/Stamina.png",
+            "OverlapBehavior": "Extend"
+          }
         }
       ]
     }

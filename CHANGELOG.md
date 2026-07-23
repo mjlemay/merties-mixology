@@ -2,6 +2,11 @@
 
 All notable changes to Mertie's Mixology will be documented in this file.
 
+## [0.2.5] - 2026-07-16
+
+### Changed
+- Updated to Hytale 0.5.6 (server build 2026.06.17-5ea7c2639); verified the mod compiles against the 0.5 server API
+
 ## [0.2.0] - 2026-04-02
 
 ### Fixed

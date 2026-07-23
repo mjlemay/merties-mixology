@@ -4,11 +4,11 @@ plugins {
 }
 
 group = "com.mertie.mixology"
-version = "0.2.3"
+version = "0.2.5"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
