@@ -1,18 +1,27 @@
 {
-  "Group": "com.mertie",
-  "Name": "MertiesMixology",
-  "Version": "0.2.5",
-  "Description": "Craft artisanal fruit cocktails at your Mixology Bar—four signature drinks in unique glassware with health restoration.",
-  "Authors": [
-    {
-      "Name": "Mertie"
+    "Group": "Mertie",
+    "Name": "merties_mixology",
+    "Version": "0.3.0",
+    "Description": "Craft artisanal fruit cocktails at your Mixology Bar - four signature drinks in unique glassware with health restoration.",
+    "Authors": [
+        {
+            "Name": "Mertie",
+            "Email": "mjlemay@gmail.com",
+            "Url": "https://thinklikemike.com"
+        }
+    ],
+    "Website": "https://www.curseforge.com/hytale/mods/merties-mixology",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "ServerVersion": ">=0.5.3 <0.6.0",
+    "Main": "dev.hytalemodding.MertiesMixologyPlugin",
+    "UpdateChecker": {
+        "CurseForge": ""
     }
-  ],
-  "Website": "https://www.curseforge.com/hytale/mods/merties-mixology",
-  "ServerVersion": ">=0.5.3 <0.6.0",
-  "Dependencies": {},
-  "OptionalDependencies": {},
-  "DisabledByDefault": false,
-  "Main": "com.mertie.mixology.MixologyPlugin",
-  "IncludesAssetPack": true
 }
