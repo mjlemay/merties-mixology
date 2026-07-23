@@ -2,6 +2,16 @@
 
 All notable changes to Mertie's Mixology will be documented in this file.
 
+## [0.3.0] - 2026-07-22
+
+### Changed
+- Migrated to the HytaleModding plugin-template boilerplate (hytale-tools Gradle plugin, generated manifest, Java 25)
+- Renamed mod id and jar: `MertiesMixologyPlugin` → `merties_mixology`
+- All content re-verified in-game after migration: Mixology Bar, Mixology Crate, and all four cocktails
+
+### Removed
+- Unfinished legacy Java recipe/effect layer (preserved on the `legacy-alpha` branch); the mod is fully JSON-driven
+
 ## [0.2.5] - 2026-07-16
 
 ### Changed

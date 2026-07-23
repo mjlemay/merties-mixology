@@ -1,83 +1,46 @@
 # MERTIE'S MIXOLOGY
 
-This mod uses the [Hytale Gradle Plugin](https://github.com/AzureDoom/Hytale-Gradle-Plugin),
-a Gradle plugin maintained by AzureDoom for Hytale mod/plugin development. It handles the repetitive
-project setup work for you, including manifest generation, validation, local server runs, IDE source
-setup, and optional hosted Hytale Javadoc injection.
+A Hytale mod for creating custom cocktails and mixology workstations.
 
-## How to start
+## Content
 
-1. Copy the template by downloading it or using the **Use this template** button.
-2. [Configure or install the Java SDK](https://hytalemodding.dev/en/docs/guides/plugin/setting-up-env)
-   to use Java 25. JetBrains Runtime is recommended for the best hot-reload/debugging experience.
-3. Open the project in your favorite IDE. We recommend
-   [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
-4. Update the project values in `gradle.properties`:
-    - `rootProject.name` in `settings.gradle.kts`
-    - `group`
-    - `manifest_group`
-    - `mod_name`
-    - `mod_id`
-    - `main_class`
-    - `mod_author`
-    - `mod_description`
-    - `mod_url`
-5. Optionally run `./gradlew` if your IDE does not automatically sync the project.
-6. Prepare the Hytale development environment:
+- **Mixology Bar** — a craftable bench (6 Wood Trunk + 3 Rock at a Workbench) with its own
+  "Drinks" crafting category
+- **Mixology Crate** — a decorative storage crate for your finest beverages
+- **Four signature cocktails**, each crafted at the Mixology Bar from one produce item plus a
+  Life Essence, served in unique glassware:
+  - **Apple Martini** — crisp apple cocktail in a martini glass
+  - **Autumn Sip** — warm pumpkin beverage in a rustic pint glass
+  - **Berry Punch** — vibrant berry punch in a solo cup
+  - **Corn Cooler** — smooth corn beverage in a coupe glass
 
-   ```bash
-   ./gradlew setupHytaleDev
-   ```
+Each drink restores health on the spot, with a lingering stamina buff and a mild kick of
+poison — drink responsibly.
 
-7. Run the local development server:
+## Building
 
-   ```bash
-   ./gradlew runServer
-   ```
-
-> On Windows, use `./gradlew.bat` or `gradlew.bat` instead of `./gradlew`. The Gradle wrapper is
-> included so you do not need to install Gradle separately; only Java is required.
-
-When the server starts, the output may prompt you to authorize your Hytale server. After that, you
-can begin developing your plugin while the server handles local development runs.
-
-## Hytale Gradle Plugin
-
-This template is built around AzureDoom's `com.azuredoom.hytale-tools` Gradle plugin.
-
-The plugin is configured in `build.gradle.kts`:
-
-```kotlin
-plugins {
-    idea
-    java
-    id("com.azuredoom.hytale-tools") version "1.+"
-}
+```bash
+./gradlew build
 ```
 
-The AzureDoom Maven repository is configured in `settings.gradle.kts`:
+The jar is built to `build/libs/merties_mixology-<version>.jar`. The version is set in
+`gradle.properties`.
 
-```kotlin
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        mavenCentral()
-        maven {
-            name = "AzureDoom Maven"
-            url = uri("https://maven.azuredoom.com/mods")
-        }
-    }
-}
+## Deploying locally
+
+```bash
+./deploy.sh
 ```
 
-Most plugin-specific settings are controlled from `gradle.properties` and passed into the
-`hytaleTools` block in `build.gradle.kts`. This keeps common project metadata in one easy-to-edit
-place.
+This builds the mod, removes any older jars from the Hytale Mods folder
+(`~/Library/Application Support/Hytale/UserData/Mods/`), and copies the fresh jar in.
 
-For full plugin documentation, configuration options, tasks, and multi-project setup, visit the
-[Hytale Gradle Plugin repository](https://github.com/AzureDoom/Hytale-Gradle-Plugin).
+## Development
 
-## Useful commands
+This project is built on the [Hytale Gradle Plugin](https://github.com/AzureDoom/Hytale-Gradle-Plugin)
+(`com.azuredoom.hytale-tools`), which handles manifest generation, validation, local server runs,
+and IDE source setup. It requires Java 25; JetBrains Runtime is recommended for the best
+hot-reload/debugging experience.
 
 ```bash
 # Sync/setup the local Hytale development environment
@@ -92,43 +55,31 @@ For full plugin documentation, configuration options, tasks, and multi-project s
 # Check your JVM and hot swap setup
 ./gradlew hytaleJvmDoctor
 
-# Build the plugin
-./gradlew build
-
 # Refresh dependencies if something fails to resolve
 ./gradlew build --refresh-dependencies
 ```
+
+Mod metadata lives in `gradle.properties` and is compiled into the generated `manifest.json`
+at build time (`manifest_group`, `mod_id`, `version`, `mod_description`, `mod_author`,
+`mod_url`, `main_class`, dependencies, and the targeted server version). After changing these
+values, run `./gradlew updatePluginManifest`.
 
 ## Project structure
 
 ```text
 src/main/java/        Plugin source code
-src/main/resources/   Plugin resources, including manifest.json
-gradle.properties     Main template configuration
+src/main/resources/   Mod assets (Common/ and Server/) and generated manifest.json
+gradle.properties     Mod metadata and version
 build.gradle.kts      Gradle build and Hytale Gradle Plugin configuration
 settings.gradle.kts   Plugin repositories and project name
+deploy.sh             Build + deploy to the local Hytale Mods folder
 ```
 
-## Manifest configuration
+## Project history
 
-The generated `manifest.json` is driven by the values in `gradle.properties`, including:
-
-- `manifest_group`
-- `mod_id`
-- `version`
-- `mod_description`
-- `mod_author`
-- `mod_url`
-- `main_class`
-- `manifest_dependencies`
-- `manifest_opt_dependencies`
-- `manifestServerVersion`
-
-After changing these values, run:
-
-```bash
-./gradlew updatePluginManifest
-```
+This mod was originally developed as `MertiesMixologyPlugin` and migrated to the
+HytaleModding plugin-template in v0.3.0. The final legacy state (v0.2.5) is preserved on the
+`legacy-alpha` branch. See `CHANGELOG.md` for the full history.
 
 ## Troubleshooting
 
@@ -138,17 +89,13 @@ After changing these values, run:
   AzureDoom Maven repository at `https://maven.azuredoom.com/mods`.
 - **Build fails with missing dependencies** — Run `./gradlew build --refresh-dependencies` and make
   sure you have internet access.
+- **The mod fails asset validation on load** — Every path referenced by a JSON in
+  `src/main/resources` must exist in the pack; one dangling reference fails the whole mod.
+  Check the client log in `~/Library/Application Support/Hytale/UserData/Logs/` for `FAIL:` lines.
 - **Permission denied on `./gradlew`** — Run `chmod +x gradlew` on macOS/Linux.
-- **Hot reload or enhanced class redefinition does not work** — Use JetBrains Runtime and try
-  `./gradlew hytaleJvmDoctor` to verify your JVM setup.
 
 ## Resources
 
 - [Hytale Gradle Plugin](https://github.com/AzureDoom/Hytale-Gradle-Plugin)
 - [Hytale Modding Guides](https://hytalemodding.dev)
 - [Hytale Modding Discord](https://discord.gg/hytalemodding)
-
-## License
-
-Add your own license after copying the template. We recommend MIT, BSD, or Apache to keep the
-modding community open.

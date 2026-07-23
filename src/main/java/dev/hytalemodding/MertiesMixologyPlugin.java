@@ -1,12 +1,9 @@
 package dev.hytalemodding;
 
-import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.util.Config;
-import dev.hytalemodding.commands.MertiesMixologyCommand;
 import dev.hytalemodding.config.MertiesMixologyConfig;
-import dev.hytalemodding.events.MertiesMixologyEvent;
 
 import javax.annotation.Nonnull;
 
@@ -22,10 +19,8 @@ public class MertiesMixologyPlugin extends JavaPlugin {
     @Override
     protected void setup() {
         config.save();
-        this.getCommandRegistry().registerCommand(new MertiesMixologyCommand("MertiesMixology", "An MertiesMixology command"));
-        if (getConfig().get().isEnabledWelcomeMessage()) {
-            this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, MertiesMixologyEvent::onPlayerReady);
-        }
+        // Command and welcome-message event registration removed for now;
+        // real /mixology behavior comes with the legacy Java port.
     }
 
     public static Config<MertiesMixologyConfig> getConfig() {
