@@ -1,0 +1,46 @@
+{
+  "TranslationProperties": {
+    "Name": "Spike Dongdong",
+    "Description": "Throwaway spike test item. Delete before ship."
+  },
+  "Parent": "Template_Food",
+  "Icon": "Icons/ItemsGenerated/cocktail_berry_punch.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Common",
+  "MaxStack": 16,
+  "Consumable": true,
+  "PlayerAnimationsId": "Daggers",
+  "Model": "Items/cocktail_berry_solo_cup.blockymodel",
+  "Texture": "Items/cocktail_solo_cup.png",
+  "Weapon": {
+    "RenderDualWielded": true
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "ItemAnimationId": "Consume"
+          }
+        }
+      ]
+    },
+    "RemoveEffect": {
+      "Interactions": [{ "Type": "Simple" }]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": { "Health": 25 },
+            "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png"
+          }
+        }
+      ]
+    }
+  }
+}

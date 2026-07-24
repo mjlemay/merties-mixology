@@ -68,7 +68,31 @@ in-game. One unknown per spike:
   crate-style). The placed vision survives.
 - Spike 1 fails → two-handed rendering is off the table engine-wide; regroup on design
   (single-hand cup like siblings, or hold for SDK updates).
-- Record all spike outcomes in this doc when known.
+**Results (2026-07-23) — PAUSED after spike 1, partial fail:**
+
+- **Dual-hand rendering WORKS**: `Weapon.RenderDualWielded: true` on a `Template_Food`
+  consumable renders the cup model in both hands. Spike 1's core render question passes.
+- **Consume is BROKEN in that config**: with `Weapon` + `PlayerAnimationsId: "Daggers"`,
+  right-click never drinks (no charge, no effects). The consume chain
+  (`Root_Secondary_Consume_Food_T1`) appears to lose to the Weapon/daggers interaction
+  setup. NOT yet isolated whether `Weapon` alone or the animation family is the blocker —
+  a no-Weapon Torch build was deployed but its consume result never got recorded.
+- **Item texture lesson**: a top-level item `Texture` must NOT point into `BlockTextures/`
+  (atlas-packed → scrambled UVs). Item textures live under `Common/Items/` beside the
+  model. A copy of the solo-cup texture now exists at `Common/Items/cocktail_solo_cup.png`.
+- **Animation family tour** (with dual-render): `Daggers` = both hands raised, crouchy
+  combat idle (best two-hand option); `Sword` = relaxed third-person but one-hand FPS;
+  `Spellbook` = no visible pose change on this item (dud); `Torch` = primary arm raised
+  only. No vanilla family gives relaxed + both-hands; only `Daggers` poses two hands.
+- **Consume requires Adventure game mode** — `Condition_Consume_Food_T1` has
+  `RequiredGameMode: "Adventure"`; in Creative, right-click falls through to block
+  placement. Test drinking in Adventure, always.
+- **Path forward (user)**: investigate custom player animations — a custom two-hand
+  relaxed drinking set could solve both the pose and possibly the consume conflict.
+  Resume by re-running the spike ladder from spike 1's consume isolation (test the
+  no-Weapon build's consume, then Weapon + non-Daggers families), then spikes 2–3.
+- Current state on disk: `Spike_Dongdong.json` still in the pack (Daggers + dual-wield
+  config) and deployed locally for further experimentation.
 
 ## Final assets (user-authored in Blockbench, after spikes pass)
 
