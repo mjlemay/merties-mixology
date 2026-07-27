@@ -1,0 +1,6 @@
+aetherhaven.storyQuests.q_bartender_shop.title=Dominic's Mixology Bar
+aetherhaven.storyQuests.q_bartender_shop.description=Dominic dreams of a bar where the town can unwind over artisanal cocktails. Help him open one.
+aetherhaven.storyQuests.q_bartender_shop.objective.blueprint=Take the bar blueprint from Dominic.
+aetherhaven.storyQuests.q_bartender_shop.objective.learn=Use the blueprint to learn the mixology bar at your plot crafting bench.
+aetherhaven.storyQuests.q_bartender_shop.objective.build=Craft a shop plot token and build the mixology bar prefab.
+aetherhaven.storyQuests.q_bartender_shop.objective.talk=Find Dominic at the bar and close the quest in dialogue.

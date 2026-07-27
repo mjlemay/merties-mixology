@@ -1,0 +1,214 @@
+{
+  "id": "merties_bartender",
+  "entry": "main_hub",
+  "nodes": {
+    "main_hub": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "bodyMode": "villager_greeting",
+      "introText": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.body",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.fallback",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.offer",
+          "condition": {
+            "type": "and",
+            "conditions": [
+              { "type": "not", "condition": { "type": "npc_binding_is_visitor" } },
+              { "type": "player_holds_any_item" }
+            ]
+          },
+          "whenFalse": "hide",
+          "giftDisableWhenNotAllowed": true,
+          "next": "gift_confirm"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_shop_complete",
+          "condition": {
+            "type": "and",
+            "conditions": [
+              { "type": "town_quest_active", "questId": "q_bartender_shop" },
+              { "type": "town_has_complete_plot", "constructionId": "plot_mixology_shop" }
+            ]
+          },
+          "whenFalse": "hide",
+          "actions": [{ "type": "complete_quest", "id": "q_bartender_shop" }],
+          "next": "dom_done"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_shop_building",
+          "condition": {
+            "type": "and",
+            "conditions": [
+              { "type": "town_quest_active", "questId": "q_bartender_shop" },
+              { "type": "not", "condition": { "type": "town_has_complete_plot", "constructionId": "plot_mixology_shop" } }
+            ]
+          },
+          "whenFalse": "hide",
+          "next": "dom_building"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_shop_offer",
+          "condition": {
+            "type": "and",
+            "conditions": [
+              { "type": "not", "condition": { "type": "town_quest_completed", "questId": "q_bartender_shop" } },
+              { "type": "not", "condition": { "type": "town_quest_active", "questId": "q_bartender_shop" } }
+            ]
+          },
+          "whenFalse": "hide",
+          "next": "dom_quest_shop"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_shop_done",
+          "condition": { "type": "town_quest_completed", "questId": "q_bartender_shop" },
+          "whenFalse": "hide",
+          "next": "dom_done"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_drinks",
+          "next": "talk_drinks"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_memory",
+          "next": "talk_memory"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.c_goodbye",
+          "actions": [{ "type": "close" }],
+          "next": null
+        }
+      ]
+    },
+    "dom_quest_shop": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_quest_shop.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_quest_shop.c0",
+          "actions": [{ "type": "start_quest", "id": "q_bartender_shop" }],
+          "next": "dom_shop_accepted"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_quest_shop.c1",
+          "next": null
+        }
+      ]
+    },
+    "dom_shop_accepted": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_shop_accepted.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_shop_accepted.c0",
+          "next": null
+        }
+      ]
+    },
+    "dom_building": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_building.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_building.c0",
+          "actions": [{ "type": "abandon_quest", "id": "q_bartender_shop" }],
+          "next": "dom_abandoned"
+        },
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_building.c1",
+          "next": null
+        }
+      ]
+    },
+    "dom_abandoned": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_abandoned.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_abandoned.c0",
+          "next": null
+        }
+      ]
+    },
+    "dom_done": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_done.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.dom_done.c0",
+          "next": null
+        }
+      ]
+    },
+    "talk_drinks": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.talk_drinks.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.talk_back",
+          "next": "main_hub"
+        }
+      ]
+    },
+    "talk_memory": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.talk_memory.body",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.talk_back",
+          "next": "main_hub"
+        }
+      ]
+    },
+    "gift_confirm": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.confirmBody",
+      "choices": [
+        {
+          "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.confirmYes",
+          "actions": [
+            {
+              "type": "gift_villager",
+              "reactionNodeLove": "gift_love",
+              "reactionNodeLike": "gift_like",
+              "reactionNodeNeutral": "gift_neutral",
+              "reactionNodeDislike": "gift_dislike"
+            }
+          ],
+          "next": "main_hub"
+        },
+        {
+          "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.confirmNo",
+          "next": "main_hub"
+        }
+      ]
+    },
+    "gift_love": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.gift.love",
+      "choices": [
+        { "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.back", "next": "main_hub" }
+      ]
+    },
+    "gift_like": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.gift.like",
+      "choices": [
+        { "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.back", "next": "main_hub" }
+      ]
+    },
+    "gift_neutral": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.gift.neutral",
+      "choices": [
+        { "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.back", "next": "main_hub" }
+      ]
+    },
+    "gift_dislike": {
+      "speaker": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.root.speaker",
+      "text": "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.gift.dislike",
+      "choices": [
+        { "text": "aetherhaven_dialogue_gift.aetherhaven.dialogue.gift.back", "next": "main_hub" }
+      ]
+    }
+  }
+}

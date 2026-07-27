@@ -1,0 +1,57 @@
+{
+  "npcRoleId": "MertiesMixology_Bartender",
+  "dialogueVillagerKind": "bartender",
+  "residentTreeId": "merties_bartender",
+  "visitorTreeId": "aetherhaven_visitor_generic",
+  "workConstructionId": "plot_mixology_shop",
+  "displayName": "Dominic Mnemonic",
+  "portraitIcon": "MertiesMixology_Bartender.png",
+  "uiSortOrder": 25,
+  "innPoolEligible": true,
+  "innPoolOrder": 14,
+  "visitorBindingKind": "visitor_bartender",
+  "innPoolRequires": {
+    "completedQuestIds": [
+      "q_merchant_stall"
+    ]
+  },
+  "reputationMilestones": [],
+  "giftLoves": [
+    "Berry_Punch",
+    "Apple_Martini",
+    "Corn_Cooler",
+    "Autumn_Sip"
+  ],
+  "giftLikes": [
+    "Plant_Fruit_Berries_Red",
+    "Plant_Fruit_Apple",
+    "Plant_Crop_Corn_Item",
+    "Plant_Crop_Pumpkin_Item",
+    "Ingredient_Life_Essence",
+    "Deco_Mug",
+    "Food_Pie_Apple",
+    "Food_Pie_Pumpkin",
+    "Food_Popcorn"
+  ],
+  "giftDislikes": [
+    "Deco_Trash",
+    "Deco_Trash_Pile_Small",
+    "Deco_Trash_Pile_Large",
+    "Ingredient_Poop",
+    "Deco_Bone_Pile",
+    "Deco_Bone_Skulls",
+    "Food_Fish_Raw"
+  ],
+  "dialogueGreetingLangKeys": [
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.greeting.0",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.greeting.1",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.greeting.2",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.greeting.3"
+  ],
+  "dialogueGiftHintLangKeys": [
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.hint.love.0",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.hint.love.1",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.hint.dislike.0",
+    "aetherhaven_dialogue_merties_bartender.aetherhaven.dialogue.merties_bartender.main_hub.hint.dislike.1"
+  ]
+}

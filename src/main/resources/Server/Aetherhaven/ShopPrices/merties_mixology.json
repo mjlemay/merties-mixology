@@ -1,0 +1,9 @@
+{
+  "catalogRevision": 1,
+  "prices": {
+    "Berry_Punch": 10,
+    "Apple_Martini": 15,
+    "Corn_Cooler": 20,
+    "Autumn_Sip": 25
+  }
+}

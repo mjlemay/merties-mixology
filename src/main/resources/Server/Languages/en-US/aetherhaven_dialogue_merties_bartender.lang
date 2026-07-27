@@ -1,0 +1,43 @@
+# Dominic Mnemonic bartender dialogue — the barkeep who never forgets an order
+
+aetherhaven.dialogue.merties_bartender.root.speaker=Dominic Mnemonic
+aetherhaven.dialogue.merties_bartender.root.body=Dominic Mnemonic. Yes, like it sounds — I never forget a face, a name, or what you ordered the last time we met. Mostly there is no last time yet, so let me fix that: I mix drinks. Good ones. All I am missing is a bar to mix them in.
+aetherhaven.dialogue.merties_bartender.main_hub.fallback=Pull up a stool, even an imaginary one. Ask me about drinks, my memory, or how the bar is coming along.
+aetherhaven.dialogue.merties_bartender.main_hub.greeting.0=Welcome back! You look a little tired. How are things?
+aetherhaven.dialogue.merties_bartender.main_hub.greeting.1=Howdy, I have a feeling you're going with the usual?
+aetherhaven.dialogue.merties_bartender.main_hub.greeting.2=A good bartender remembers every order, so my good memory helps me serve you!
+aetherhaven.dialogue.merties_bartender.main_hub.greeting.3=You look more thirsty than last time!
+
+aetherhaven.dialogue.merties_bartender.main_hub.hint.love.0=A finished cocktail, made properly? That is a gift I would never forget. Professional courtesy.
+aetherhaven.dialogue.merties_bartender.main_hub.hint.love.1=I crafted the house menu from what I love and can supply locally!
+aetherhaven.dialogue.merties_bartender.main_hub.hint.dislike.0=Do not hand me trash. I will remember it forever, and so will our friendship.
+aetherhaven.dialogue.merties_bartender.main_hub.hint.dislike.1=Keep the bones and rubbish off my counter, shall we?
+
+aetherhaven.dialogue.merties_bartender.root.c_shop_offer=You mentioned wanting to open a bar in town.
+aetherhaven.dialogue.merties_bartender.root.c_shop_building=Just an FYI, the bar is still under construction.
+aetherhaven.dialogue.merties_bartender.root.c_shop_complete=The bar is looking great. Time to close our tab!
+aetherhaven.dialogue.merties_bartender.root.c_shop_done=Just checking in on the town's favorite bartender.
+aetherhaven.dialogue.merties_bartender.root.c_drinks=What's on the menu?
+aetherhaven.dialogue.merties_bartender.root.c_memory=Is Mnemonic really your name?
+aetherhaven.dialogue.merties_bartender.root.c_goodbye=That's all I got I think.
+aetherhaven.dialogue.merties_bartender.talk_back=Mind if I ask you something?
+
+aetherhaven.dialogue.merties_bartender.dom_quest_shop.body=For years I've held onto every regular, every recipe, every night that went sideways locked in a vault in my mind. What I have never kept are the memories from building a bar to call my own. I have the layout memorized down to the last barstool: counter here, shelves there, lanterns low. If you will lend me your hammer I will lend my shot glass. Let's serve the town's thirst together!
+aetherhaven.dialogue.merties_bartender.dom_quest_shop.c0=Let's build your bar.
+aetherhaven.dialogue.merties_bartender.dom_quest_shop.c1=Not just yet. Give me some time.
+aetherhaven.dialogue.merties_bartender.dom_shop_accepted.body=Then it is settled, and already filed away up in the ol' noggin. I wrote the design on the back of this cocktail napkin for you to follow. I'll be working on my menu here at the inn for now.
+aetherhaven.dialogue.merties_bartender.dom_shop_accepted.c0=I'll get on it right away. Is this scribble an S or a 4?
+aetherhaven.dialogue.merties_bartender.dom_building.body=I sourced glassware and the menu is looking sophisticated and sharp! How are things on your end?
+aetherhaven.dialogue.merties_bartender.dom_building.c0=Honestly, I need to focus on other matters for a while.
+aetherhaven.dialogue.merties_bartender.dom_building.c1=Still going strong like vodka! We'll get this together soon.
+aetherhaven.dialogue.merties_bartender.dom_abandoned.body=Oh, alright. I can always jot down the ideas again later. It's all locked away in my mind vault!
+aetherhaven.dialogue.merties_bartender.dom_abandoned.c0=Thanks for understanding.
+aetherhaven.dialogue.merties_bartender.dom_done.body=The bar is stocked, the ice is fresh, and I'm ready to remember all the good times ahead of us! Thank you for your help, the first round is on me!
+aetherhaven.dialogue.merties_bartender.dom_done.c0=Cheers to you Dominic!
+aetherhaven.dialogue.merties_bartender.talk_drinks.body=We have several house specials, each burned into memory. Berry Punch is a delight with bright, honest tones of the earthy flavors of spring for ten. The Apple Martini is crisp with a wink and a steal at fifteen. We also have the Corn Cooler, my own take of a classic, for twenty. Lastly is the Autumn Sip served in a pumpkin for twenty-five, and worth every coin.
+aetherhaven.dialogue.merties_bartender.talk_memory.body=My family name is in itself a reminder of the family curse. My father fixated on every tab ever left unpaid and my Grandfather recalled every toast promise unfulfilled. Me? I remember it all. It makes me an excellent bartender and a terrible person to argue with.
+
+aetherhaven.dialogue.merties_bartender.gift.love=Oh this is for me? Let's put it on the top shelf, where I keep the things worth remembering.
+aetherhaven.dialogue.merties_bartender.gift.like=Thanks, I'll remember this always.
+aetherhaven.dialogue.merties_bartender.gift.neutral=You know, not every gift is noteworthy, but I enjoy the small ones too.
+aetherhaven.dialogue.merties_bartender.gift.dislike=Don't take this as a threat, but I do remember everything.

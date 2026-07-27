@@ -1,0 +1,8 @@
+{
+  "entries": [
+    { "itemId": "Berry_Punch", "weight": 2, "stockMin": 5, "stockMax": 10 },
+    { "itemId": "Apple_Martini", "weight": 2, "stockMin": 5, "stockMax": 10 },
+    { "itemId": "Corn_Cooler", "weight": 2, "stockMin": 5, "stockMax": 10 },
+    { "itemId": "Autumn_Sip", "weight": 2, "stockMin": 5, "stockMax": 10 }
+  ]
+}
