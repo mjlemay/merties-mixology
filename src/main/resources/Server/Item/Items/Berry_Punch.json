@@ -4,7 +4,7 @@
     "Description": "A vibrant and fruity punch served in a solo cup. Bursting with berry flavor and tropical vibes."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/cocktail_berry_punch.png",
+  "Icon": "Icons/ItemsGenerated/Berry_Punch.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -24,21 +24,29 @@
       ]
     },
     "RemoveEffect": {
-      "Interactions": [{ "Type": "Simple" }]
+      "Interactions": [
+        {
+          "Type": "Simple"
+        }
+      ]
     },
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": 25 },
+            "StatModifiers": {
+              "Health": 25
+            },
             "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png"
           }
         },
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": -1 },
+            "StatModifiers": {
+              "Health": -1
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "Debuff": true,
@@ -49,7 +57,9 @@
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Stamina": 5 },
+            "StatModifiers": {
+              "Stamina": 5
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "StatusEffectIcon": "UI/StatusEffects/Stamina.png",
@@ -89,6 +99,18 @@
           "Mixology_Drinks"
         ]
       }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 1.3,
+    "Rotation": [
+      39,
+      35,
+      20
+    ],
+    "Translation": [
+      -1,
+      -8
     ]
   }
 }

@@ -4,7 +4,7 @@
     "Description": "A crisp and refreshing apple cocktail served in an elegant martini glass. Restores health with a subtle fizz."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/cocktail_apple_martini.png",
+  "Icon": "Icons/ItemsGenerated/Apple_Martini.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -24,21 +24,29 @@
       ]
     },
     "RemoveEffect": {
-      "Interactions": [{ "Type": "Simple" }]
+      "Interactions": [
+        {
+          "Type": "Simple"
+        }
+      ]
     },
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": 25 },
+            "StatModifiers": {
+              "Health": 25
+            },
             "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png"
           }
         },
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": -1 },
+            "StatModifiers": {
+              "Health": -1
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "Debuff": true,
@@ -49,7 +57,9 @@
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Stamina": 5 },
+            "StatModifiers": {
+              "Stamina": 5
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "StatusEffectIcon": "UI/StatusEffects/Stamina.png",
@@ -89,6 +99,18 @@
           "Mixology_Drinks"
         ]
       }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 1.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -9,
+      -9
     ]
   }
 }

@@ -2,7 +2,7 @@
   "id": "plot_mixology_shop",
   "displayName": "Mixology Bar",
   "description": "A cozy cocktail bar serving artisanal fruit drinks.",
-  "displayNameLangKey": "merties_mixology.building.plot_mixology_shop.name",
+  "displayNameLangKey": "aetherhaven_buildings.aetherhaven.buildings.plot_mixology_shop.displayName",
   "prefabPath": "plot_mixology_shop.prefab.json",
   "plotTokenItemId": "Aetherhaven_Plot_Token",
   "plotTokenLockedByDefault": true,

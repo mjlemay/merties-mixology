@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "Corn Cooler",
-    "Description": "A smooth and sweet corn beverage in an elegant coupe glass. Perfect for warm afternoons."
+    "Name": "Aethereal Rosé",
+    "Description": "Elder Lyren's signature cocktail, a delicate blend of floral and fruity notes. Served in a special glass for the tipsy tourist."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/Corn_Cooler.png",
+  "Icon": "Icons/ItemsGenerated/Aether_Rose.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -70,15 +70,15 @@
     }
   },
   "BlockType": {
-    "CustomModel": "Items/cocktail_corn_jar.blockymodel",
+    "CustomModel": "Items/cocktail_aether_rose.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/cocktail_corn_jar.png",
+        "Texture": "BlockTextures/cocktail_aether_rose.png",
         "Weight": 1
       }
     ],
     "BlockParticleSetId": "GlassSmall",
-    "ParticleColor": "#ffa117"
+    "ParticleColor": "#9265af"
   },
   "Recipe": {
     "Input": [
@@ -91,26 +91,18 @@
         "Quantity": 1
       }
     ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Id": "Mixology_Bar",
-        "Categories": [
-          "Mixology_Drinks"
-        ]
-      }
-    ]
+    "BenchRequirement": []
   },
   "IconProperties": {
-    "Scale": 1.5,
+    "Scale": 1.4,
     "Rotation": [
-      354,
-      289,
-      327
+      6,
+      68,
+      20
     ],
     "Translation": [
-      2,
-      -4
+      1,
+      -9
     ]
   }
 }

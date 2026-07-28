@@ -1,8 +1,9 @@
 {
   "entries": [
-    { "itemId": "Berry_Punch", "weight": 2, "stockMin": 5, "stockMax": 10 },
-    { "itemId": "Apple_Martini", "weight": 2, "stockMin": 5, "stockMax": 10 },
-    { "itemId": "Corn_Cooler", "weight": 2, "stockMin": 5, "stockMax": 10 },
-    { "itemId": "Autumn_Sip", "weight": 2, "stockMin": 5, "stockMax": 10 }
+    { "itemId": "Berry_Punch", "weight": 1, "stockMin": 5, "stockMax": 20 },
+    { "itemId": "Apple_Martini", "weight": 3, "stockMin": 5, "stockMax": 20 },
+    { "itemId": "Corn_Cooler", "weight": 3, "stockMin": 5, "stockMax": 20 },
+    { "itemId": "Autumn_Sip", "weight": 3, "stockMin": 5, "stockMax": 20 },
+    { "itemId": "Aether_Rose", "weight": 5, "stockMin": 5, "stockMax": 20 }
   ]
 }

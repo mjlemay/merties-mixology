@@ -4,7 +4,7 @@
     "Description": "A warm and cozy pumpkin beverage served in a rustic pint glass. Tastes like fall in a drink."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/cocktail_autumn_sip.png",
+  "Icon": "Icons/ItemsGenerated/Autumn_Sip.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -24,21 +24,29 @@
       ]
     },
     "RemoveEffect": {
-      "Interactions": [{ "Type": "Simple" }]
+      "Interactions": [
+        {
+          "Type": "Simple"
+        }
+      ]
     },
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": 25 },
+            "StatModifiers": {
+              "Health": 25
+            },
             "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png"
           }
         },
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Health": -1 },
+            "StatModifiers": {
+              "Health": -1
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "Debuff": true,
@@ -49,7 +57,9 @@
         {
           "Type": "ApplyEffect",
           "EffectId": {
-            "StatModifiers": { "Stamina": 5 },
+            "StatModifiers": {
+              "Stamina": 5
+            },
             "Duration": 30,
             "DamageCalculatorCooldown": 2,
             "StatusEffectIcon": "UI/StatusEffects/Stamina.png",
@@ -89,6 +99,18 @@
           "Mixology_Drinks"
         ]
       }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 1.2,
+    "Rotation": [
+      342,
+      164,
+      15
+    ],
+    "Translation": [
+      2,
+      -11
     ]
   }
 }
