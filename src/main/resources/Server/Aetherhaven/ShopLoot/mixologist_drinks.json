@@ -4,6 +4,7 @@
     { "itemId": "Apple_Martini", "weight": 3, "stockMin": 5, "stockMax": 20 },
     { "itemId": "Corn_Cooler", "weight": 3, "stockMin": 5, "stockMax": 20 },
     { "itemId": "Autumn_Sip", "weight": 3, "stockMin": 5, "stockMax": 20 },
-    { "itemId": "Aether_Rose", "weight": 5, "stockMin": 5, "stockMax": 20 }
+    { "itemId": "Aether_Rose", "weight": 5, "stockMin": 5, "stockMax": 20 },
+    { "itemId": "Craft_Weizen", "weight": 4, "stockMin": 5, "stockMax": 20 }
   ]
 }
