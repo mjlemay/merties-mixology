@@ -67,10 +67,31 @@
           }
         }
       ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Health_Potion_Low_Drink"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Potion_Drink_Success"
+          }
+        }
+      ]
     }
   },
   "BlockType": {
     "CustomModel": "Items/cocktail_berry_solo_cup.blockymodel",
+    "CustomModelScale": 0.8,
     "CustomModelTexture": [
       {
         "Texture": "BlockTextures/cocktail_solo_cup.png",

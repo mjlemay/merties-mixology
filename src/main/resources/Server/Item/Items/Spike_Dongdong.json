@@ -4,7 +4,7 @@
     "Description": "Throwaway spike test item. Delete before ship."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/cocktail_berry_punch.png",
+  "Icon": "Icons/ItemsGenerated/Berry_Punch.png",
   "Categories": [
     "Items.Foods"
   ],

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Aethereal Rosé",
+    "Name": "Aethereal Ros\u00e9",
     "Description": "Elder Lyren's signature cocktail, a delicate blend of floral and fruity notes. Served in a special glass for the tipsy tourist."
   },
   "Parent": "Template_Food",
@@ -67,6 +67,26 @@
           }
         }
       ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Health_Potion_Low_Drink"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Potion_Drink_Success"
+          }
+        }
+      ]
     }
   },
   "BlockType": {
@@ -78,12 +98,12 @@
       }
     ],
     "BlockParticleSetId": "GlassSmall",
-    "ParticleColor": "#9265af"
+    "ParticleColor": "#612432"
   },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Corn_Item",
+        "ItemId": "Plant_Crop_Elderberry",
         "Quantity": 1
       },
       {

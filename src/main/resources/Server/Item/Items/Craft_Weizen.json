@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "Autumn Sip",
-    "Description": "A warm and cozy pumpkin beverage served in a rustic pint glass. Tastes like fall in a drink."
+    "Name": "Craft Weizen",
+    "Description": "A frothy wheat beer brewed in a cupboard under the counter of the local inn."
   },
   "Parent": "Template_Food",
-  "Icon": "Icons/ItemsGenerated/Autumn_Sip.png",
+  "Icon": "Icons/ItemsGenerated/Craft_Weizen.png",
   "Categories": [
     "Items.Foods"
   ],
@@ -90,20 +90,20 @@
     }
   },
   "BlockType": {
-    "CustomModel": "Items/cocktail_pumpkin_sip.blockymodel",
+    "CustomModel": "Items/cocktail_wheat_pint.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "BlockTextures/cocktail_pumpkin_sip.png",
+        "Texture": "BlockTextures/cocktail_wheat_pint.png",
         "Weight": 1
       }
     ],
-    "BlockParticleSetId": "Mud",
-    "ParticleColor": "#402004"
+    "BlockParticleSetId": "GlassSmall",
+    "ParticleColor": "#ffa117"
   },
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Plant_Crop_Pumpkin_Item",
+        "ItemId": "Plant_Crop_Wheat_Item",
         "Quantity": 1
       },
       {
@@ -122,15 +122,15 @@
     ]
   },
   "IconProperties": {
-    "Scale": 1.2,
+    "Scale": 1.5,
     "Rotation": [
-      342,
-      164,
-      15
+      354,
+      289,
+      327
     ],
     "Translation": [
       2,
-      -11
+      -4
     ]
   }
 }
