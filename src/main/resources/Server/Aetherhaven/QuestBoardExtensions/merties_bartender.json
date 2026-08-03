@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "villagers": {
+    "MertiesMixology_Bartender": {
+      "fetchEntries": [
+        {
+          "id": "mixology_ice_run",
+          "rank": "E",
+          "minRank": "E",
+          "maxRank": "C",
+          "weight": 12,
+          "daysLimit": 3,
+          "titleLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.ice_run.title",
+          "descriptionLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.ice_run.description",
+          "itemSets": [
+            {
+              "weight": 1,
+              "items": [
+                {
+                  "itemId": "Rock_Ice",
+                  "count": 25
+                }
+              ]
+            }
+          ],
+          "rewards": [
+            {
+              "kind": "item",
+              "itemId": "Aetherhaven_Gold_Coin",
+              "count": 20,
+              "grantTo": "player"
+            },
+            {
+              "kind": "reputation",
+              "amount": 5,
+              "grantTo": "quest_giver_npc"
+            }
+          ]
+        },
+        {
+          "id": "mixology_deep_freeze",
+          "rank": "D",
+          "minRank": "D",
+          "maxRank": "B",
+          "weight": 10,
+          "daysLimit": 4,
+          "titleLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.deep_freeze.title",
+          "descriptionLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.deep_freeze.description",
+          "itemSets": [
+            {
+              "weight": 1,
+              "items": [
+                {
+                  "itemId": "Ingredient_Ice_Essence",
+                  "count": 5
+                }
+              ]
+            }
+          ],
+          "rewards": [
+            {
+              "kind": "item",
+              "itemId": "Aetherhaven_Gold_Coin",
+              "count": 32,
+              "grantTo": "player"
+            },
+            {
+              "kind": "reputation",
+              "amount": 5,
+              "grantTo": "quest_giver_npc"
+            }
+          ]
+        },
+        {
+          "id": "mixology_exotic_glass",
+          "rank": "C",
+          "minRank": "C",
+          "maxRank": "A",
+          "weight": 8,
+          "daysLimit": 5,
+          "titleLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.exotic_glass.title",
+          "descriptionLangKey": "merties_quest_board.aetherhaven.questBoard.bartender.exotic_glass.description",
+          "itemSets": [
+            {
+              "weight": 1,
+              "items": [
+                {
+                  "itemId": "Ingredient_Crystal_Pink",
+                  "count": 10
+                }
+              ]
+            }
+          ],
+          "rewards": [
+            {
+              "kind": "item",
+              "itemId": "Aetherhaven_Gold_Coin",
+              "count": 100,
+              "grantTo": "player"
+            },
+            {
+              "kind": "reputation",
+              "amount": 6,
+              "grantTo": "quest_giver_npc"
+            }
+          ]
+        }
+      ],
+      "huntEntries": [],
+      "raidEntries": []
+    }
+  }
+}
