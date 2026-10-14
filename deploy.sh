@@ -2,7 +2,7 @@
 set -e
 
 echo "Building Merties Mixology..."
-./gradlew build
+./gradlew updatePluginManifest build
 
 VERSION=$(grep '^version' gradle.properties | sed 's/version *= *//' | tr -d ' ')
 JAR="build/libs/merties_mixology-${VERSION}.jar"
