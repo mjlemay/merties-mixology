@@ -1,7 +1,7 @@
 {
     "Group": "Mertie",
     "Name": "Mertie's Mixology",
-    "Version": "0.4.0",
+    "Version": "0.4.1",
     "Description": "Craft artisanal fruit cocktails at your Mixology Bar - four signature drinks in unique glassware with health restoration.",
     "Authors": [
         {
@@ -19,7 +19,7 @@
     "OptionalDependencies": {
         
     },
-    "ServerVersion": ">=0.7.0 <0.8.0",
+    "ServerVersion": ">=0.7.1 <0.8.0",
     "Main": "dev.hytalemodding.MertiesMixologyPlugin",
     "UpdateChecker": {
         "CurseForge": ""
